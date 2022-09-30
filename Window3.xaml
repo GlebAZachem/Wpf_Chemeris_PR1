@@ -7,16 +7,17 @@
         mc:Ignorable="d"
         Title="Window3" Height="450" Width="800">
     <Grid>
-        <Canvas>
-         <Label Content="Регистрация пользователя:" FontSize="20"  />
-        <Label Content="ФИО:" FontSize="20" />
-        <TextBox FontSize="20" />
-        <Label Content="Email:" FontSize="20"  />
-        <TextBox FontSize="20"  />
-        <Button Content="Зарегистрироваться" FontSize="16" Width="15" Height="20"/>   
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="793*"/>
+        </Grid.ColumnDefinitions>
+        <Canvas Grid.ColumnSpan="2">
+            <Label Content="Регистрация пользователя:" FontSize="20"  Width="274" Height="45" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="29" Canvas.Top="37" />
+            <Label Content="ФИО:" FontSize="20" Canvas.Left="30" Canvas.Top="87" />
+            <TextBox FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center" Width="289" Canvas.Left="111" Canvas.Top="92" Height="26" />
+            <Label Content="Email:" FontSize="20" Canvas.Left="29" Canvas.Top="129" HorizontalAlignment="Center" VerticalAlignment="Top"  />
+            <TextBox FontSize="20" Canvas.Left="111" Canvas.Top="134" HorizontalAlignment="Left" VerticalAlignment="Center" Width="291" Height="26"  />
+            <Button Content="Зарегистрироваться" FontSize="16" Width="180" Height="50" Canvas.Left="570" Canvas.Top="360"/>
         </Canvas>
-        
-       
-  
     </Grid>
 </Window>
